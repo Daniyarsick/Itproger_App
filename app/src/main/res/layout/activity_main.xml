@@ -14,6 +14,44 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.058"
+            android:id="@+id/main_label"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.498" />
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/user_data"
+            app:layout_constraintTop_toBottomOf="@+id/main_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:hint="Введите текст" />
+
+    <Button
+            android:text="Добавить "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/user_data"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="52dp" />
+
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/listView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
